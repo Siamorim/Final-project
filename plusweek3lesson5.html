@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SheCodes Plus</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .special {
+        color: red;
+        font-size: 46px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>SheCodes Plus / Arrays</h1>
+
+    <script>
+      let days = [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday",
+      ];
+      console.log(days);
+
+      console.log(days[0]);
+      console.log(days[6]);
+
+      days[6] = "Funday";
+      console.log(days);
+
+      days.shift(days[0]);
+      console.log(days);
+
+      days.shift(days[1]);
+      console.log(days);
+
+      function daysWeek(days) {
+        console.log(`Temperature on ${days} is 18 degrees`);
+      }
+      days.forEach(daysWeek);
+    </script>
+  </body>
+</html>

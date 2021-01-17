@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>She Codes Plus</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 0 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 900;
+        margin: 0;
+        font-size: 34px;
+        line-height: 48px;
+      }
+
+      h1 h2,
+      h3 {
+        color: #231d3c;
+      }
+
+      .logo {
+        display: block;
+        margin: 30px auto;
+        width: 150px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img src="images/logo.png" alt="She Codes Plus Logo" class="logo" />
+    <h1>
+      <div class="temperature" id="temperature">JavaScript Geolocation API</div>
+    </h1>
+
+    <h3>JS Challenge 1</h3>
+    <p>Log your current latitude and longitude using the Geolocation API</p>
+
+    <h3>JS Challenge 2</h3>
+    <p>Log the current temperature where you are.</p>
+
+    <h3>JS Challenge 3</h3>
+    <p>Change the h1 of this page by the current temperature</p>
+
+    <script>
+      function showTemperature(response) {
+        let temperature = Math.round(response.data.main.temp);
+        let heading = document.querySelector("h1");
+        heading.innerHTML = `The outside temperature is ${temperature}ºC`;
+      }
+
+      function showPosition(position) {
+        let latitude = position.coords.latitude;
+        let longitude = position.coords.longitude;
+        let units = "metric";
+        let apiKey = "f6b05703004145fac5fd3f7a96bd1a10";
+        let apiEndpoint = "http://api.openweathermap.org/data/2.5/weather";
+        let apiUrl = `${apiEndpoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+
+        axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+      }
+
+      navigator.geolocation.getCurrentPosition(showPosition);
+    </script>
+  </body>
+</html>
