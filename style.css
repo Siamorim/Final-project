@@ -4,7 +4,7 @@
   border: 3px solid #fac168;
   /*background-image: linear-gradient(to bottom right, cornflowerblue, white);*/
   border-radius: 40px;
-  margin: 15px auto;
+  margin: 15px auto 0px;
   padding: 0px 0px 30px 0px;
   max-width: 750px;
   min-width: 750px;
@@ -175,4 +175,14 @@ h1 {
   cursor: pointer;
   color: red;
   transition: all 200ms ease;
+}
+
+.code {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 290px;
+  font-size: 12px;
+  font-family: "Texturina", serif;
+  font-weight: bold;
 }
