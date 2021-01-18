@@ -71,11 +71,6 @@ function searchLocation(position) {
   axios.get(apiUrl).then(showTemperature);
 }
 
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
-
 function showTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = Math.round(
@@ -99,16 +94,19 @@ function searchCity(city) {
 }
 
 function handleSubmit(event) {
-  //debugger;
   event.preventDefault();
   let city = document.querySelector("#cityInput").value;
   searchCity(city);
 }
+searchCity("New York");
 
 let formHeader = document.querySelector("#formHeader");
 formHeader.addEventListener("submit", handleSubmit);
 
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
 let currentLocationButton = document.querySelector("#btnCurrentlocation");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-
-searchCity("New York");
