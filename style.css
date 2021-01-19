@@ -194,4 +194,5 @@ h1 {
 
 .temptoday .active:hover {
   text-decoration: none;
+  transition: all 200ms ease;
 }
