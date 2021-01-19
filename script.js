@@ -47,12 +47,16 @@ formatDate();
 
 function convertToFahrenheit(event) {
   event.preventDefault();
+  celsiuslink.classlist.remove("active");
+  fahrenheitlink.classlist.add("active");
   let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = Math.round(fahrenheitTemp);
 }
 function convertToCelsius(event) {
   event.preventDefault();
+  celsiuslink.classlist.add("active");
+  fahrenheitlink.classlist.remove("active");
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = Math.round(celsiusTemperature);
 }
