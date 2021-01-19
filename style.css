@@ -173,7 +173,7 @@ h1 {
 
 .btnCurrentlocation:hover {
   cursor: pointer;
-  color: red;
+  color: #fac168;
   transition: all 200ms ease;
 }
 
