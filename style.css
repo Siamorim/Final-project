@@ -192,6 +192,7 @@ h1 {
   cursor: default;
 }
 
-.active:hover {
+.TempToday .active:hover {
   text-decoration: none;
+  color: red;
 }
