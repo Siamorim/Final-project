@@ -47,7 +47,7 @@ formatDate();
 
 function convertToFahrenheit(event) {
   event.preventDefault();
-  let fahrenheitTemp = ((14 * 9) / 5) * 32;
+  let fahrenheitTemp = (14 * 9) / 5 + 32;
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = Math.round(fahrenheitTemp);
 }
