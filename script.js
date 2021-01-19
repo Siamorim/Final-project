@@ -108,13 +108,12 @@ function handleSubmit(event) {
 }
 searchCity("New York");
 
-let formHeader = document.querySelector("#formHeader");
-formHeader.addEventListener("submit", handleSubmit);
-
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+let formHeader = document.querySelector("#formHeader");
+formHeader.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#btnCurrentlocation");
 currentLocationButton.addEventListener("click", getCurrentLocation);
