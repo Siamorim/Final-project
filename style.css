@@ -192,6 +192,6 @@ h1 {
   cursor: default;
 }
 
-.temptoday .active:hover {
+.active:hover {
   text-decoration: none;
 }
