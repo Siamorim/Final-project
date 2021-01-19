@@ -185,6 +185,7 @@ h1 {
   font-weight: bold;
   position: relative;
   top: 47px;
+  left: 20px;
 }
 
 .TempToday .active {
