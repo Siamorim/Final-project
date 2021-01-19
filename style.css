@@ -109,12 +109,6 @@ h2,
   font-style: normal;
 }
 
-.precipitation {
-  position: relative;
-  bottom: 0px;
-}
-
-.precipitation,
 .humidity,
 .wind {
   position: relative;
