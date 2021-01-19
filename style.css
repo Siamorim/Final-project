@@ -70,8 +70,8 @@ h2,
   display: block;
   width: 45px;
   position: absolute;
-  left: 40px;
-  top: 10px;
+  left: 38px;
+  top: -10px;
 }
 
 .todayTempMinMax {
