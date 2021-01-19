@@ -56,13 +56,13 @@ function convertToFahrenheit(event) {
 function convertToCelsius(event) {
   event.preventDefault();
   celsiuslink.classlist.add("active");
-  fahrenheitlink.classlist.remove("active");
+  fahreneitlink.classlist.remove("active");
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-let fahreneitlink = document.querySelector("#fahrenheit-link");
-fahreneitlink.addEventListener("click", convertToFahrenheit);
+let fahrenheitlink = document.querySelector("#fahrenheit-link");
+fahrenheitlink.addEventListener("click", convertToFahrenheit);
 let celsiuslink = document.querySelector("#celsius-link");
 celsiuslink.addEventListener("click", convertToCelsius);
 
