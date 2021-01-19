@@ -47,10 +47,10 @@ formatDate();
 
 function convertToFahrenheit(event) {
   event.preventDefault();
+  let fahrenheitTemp = ((14 * 9) / 5) * 32;
   let tempElement = document.querySelector("#temp");
-  tempElement.innerHTML = 66;
+  tempElement.innerHTML = Math.round(fahrenheitTemp);
 }
-
 function convertToCelsius(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#temp");
@@ -59,7 +59,6 @@ function convertToCelsius(event) {
 
 let fahreneitlink = document.querySelector("#fahrenheit-link");
 fahreneitlink.addEventListener("click", convertToFahrenheit);
-
 let celsiuslink = document.querySelector("#celsius-link");
 celsiuslink.addEventListener("click", convertToCelsius);
 
