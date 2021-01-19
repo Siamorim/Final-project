@@ -186,3 +186,12 @@ h1 {
   font-family: "Texturina", serif;
   font-weight: bold;
 }
+
+.TempToday .active {
+  color: black;
+  cursor: default;
+}
+
+.temptoday .active:hover {
+  text-decoration: none;
+}
