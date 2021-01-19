@@ -68,10 +68,10 @@ h2,
 
 .icon {
   display: block;
-  width: 35px;
+  width: 45px;
   position: absolute;
-  left: 50px;
-  top: 4px;
+  left: 48px;
+  top: 0px;
 }
 
 .todayTempMinMax {
