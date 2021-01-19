@@ -85,6 +85,12 @@ function showTemperature(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  document.querySelector("#curMin").innerHTML = Math.round(
+    response.data.main.temp_min
+  );
+  document.querySelector("#curMax").innerHTML = Math.round(
+    response.data.main.temp_max
+  );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document
