@@ -56,7 +56,7 @@ function convertToFahrenheit(event) {
 function convertToCelsius(event) {
   event.preventDefault();
   celsiuslink.classlist.add("active");
-  fahreneitlink.classlist.remove("active");
+  fahrenheitlink.classlist.remove("active");
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = Math.round(celsiusTemperature);
 }
