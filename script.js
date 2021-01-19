@@ -54,7 +54,7 @@ function convertToFahrenheit(event) {
 function convertToCelsius(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#temp");
-  tempElement.innerHTML = 22;
+  tempElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 let fahreneitlink = document.querySelector("#fahrenheit-link");
@@ -120,5 +120,6 @@ let currentLocationButton = document.querySelector("#btnCurrentlocation");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let celsiusTemperature = null;
+let fahrenheitTemperature = null;
 
 searchCity("New York");
