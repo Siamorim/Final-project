@@ -36,7 +36,7 @@ input[type="text"] {
   width: 30px;
   position: relative;
   margin: 15px 0;
-  color: white;
+  color: black;
   right: -90px;
 }
 
@@ -47,7 +47,7 @@ h2,
 .Today,
 .NextDays,
 .city {
-  color: white;
+  color: black;
 }
 
 .temp {
