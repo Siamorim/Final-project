@@ -74,7 +74,7 @@ h2,
   top: -10px;
 }
 
-.todayTempMinMax {
+.realFeel {
   font-size: 15px;
   margin: 0px auto;
   padding: 0px 0px 0px 10px;
@@ -109,8 +109,7 @@ h2,
   font-style: normal;
 }
 
-.humidity,
-.wind {
+.humidity {
   position: relative;
   right: -160px;
 }
