@@ -85,6 +85,9 @@ function showTemperature(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  document.querySelector("#real").innerHTML = Math.round(
+    response.data.main.feels_like
+  );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#icon").setAttribute(
