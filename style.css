@@ -9,7 +9,7 @@
   max-width: 750px;
   min-width: 750px;
   height: 100%;
-  background-image: url(JackZero.jpg);
+  background-image: url(nbc.jpg);
   background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@ input[type="text"] {
   width: 30px;
   position: relative;
   margin: 15px 0;
-  color: black;
+  color: white;
   right: -90px;
 }
 
@@ -45,12 +45,9 @@ h2,
 .units,
 .todayTempMinMax,
 .Today,
+.NextDays,
 .city {
-  color: black;
-}
-
-.NextDays {
-  color: #fac168;
+  color: white;
 }
 
 .temp {
@@ -161,8 +158,8 @@ h1 {
   border: none;
   position: relative;
   top: 11px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   text-decoration: underline;
   margin: 0px auto;
   padding: 0px auto;
@@ -186,11 +183,11 @@ h1 {
 }
 
 .TempToday .active {
-  color: black;
+  color: white;
   cursor: default;
 }
 
 .TempToday .active:hover {
   text-decoration: none;
-  color: black;
+  color: white;
 }
