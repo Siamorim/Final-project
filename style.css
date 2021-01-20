@@ -113,6 +113,10 @@ h2,
   right: -160px;
 }
 
+.wind {
+  text-align: right;
+}
+
 .line {
   background-color: #fac168;
   border-radius: 20px;
