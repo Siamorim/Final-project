@@ -76,6 +76,7 @@ function searchLocation(position) {
 
 function showTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#country").innerHTML = response.data.sys.country;
   document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
   );
@@ -88,8 +89,6 @@ function showTemperature(response) {
   document.querySelector("#real").innerHTML = Math.round(
     response.data.main.feels_like
   );
-  document.querySelector("#country").innerHTML = response.data.sys.country;
-  console.log(response.data.sys.country);
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#icon").setAttribute(
