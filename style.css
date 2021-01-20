@@ -198,3 +198,8 @@ h1 {
   text-decoration: none;
   color: white;
 }
+
+.imgWin {
+  position: relative;
+  right: 70px;
+}
