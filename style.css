@@ -112,12 +112,14 @@ h2,
 .humidity {
   position: relative;
   right: -160px;
+  font-size: 16px;
 }
 
 .wind {
   text-align: right;
   position: relative;
   right: 82px;
+  font-size: 16px;
 }
 
 .line {
