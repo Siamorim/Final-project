@@ -108,10 +108,14 @@ h2,
   font-style: normal;
 }
 
-.humidity,
-.wind {
+.humidity {
   position: relative;
   right: -160px;
+}
+
+.wind {
+  position: relative;
+  right: 10px;
 }
 
 .line {
