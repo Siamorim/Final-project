@@ -115,6 +115,8 @@ h2,
 
 .wind {
   text-align: right;
+  position: relative;
+  right: 10px;
 }
 
 .line {
