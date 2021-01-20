@@ -75,7 +75,6 @@ h2,
 }
 
 .realFeel {
-  font-size: 15px;
   margin: 0px auto;
   padding: 0px 0px 0px 10px;
   position: relative;
@@ -117,7 +116,6 @@ h2,
 .wind {
   position: relative;
   right: -30px;
-  font-size: 18px;
 }
 
 .line {
