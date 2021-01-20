@@ -45,9 +45,12 @@ h2,
 .units,
 .todayTempMinMax,
 .Today,
-.NextDays,
 .city {
   color: black;
+}
+
+.NextDays {
+  color: #fac168;
 }
 
 .temp {
