@@ -89,6 +89,7 @@ function showTemperature(response) {
     response.data.main.feels_like
   );
   document.querySelector("#country").innerHTML = response.data.sys.country;
+  console.log(response.data.sys.country);
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#icon").setAttribute(
