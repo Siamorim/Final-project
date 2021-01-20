@@ -183,11 +183,11 @@ h1 {
 }
 
 .TempToday .active {
-  color: white;
+  color: black;
   cursor: default;
 }
 
 .TempToday .active:hover {
   text-decoration: none;
-  color: white;
+  color: black;
 }
