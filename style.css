@@ -212,7 +212,10 @@ h1 {
   text-align: center;
   position: relative;
   left: -100px;
-  text-shadow: #fac168;
   margin: 0;
   padding: 0;
+}
+
+.weatherTitle {
+  line-height: 0.5;
 }
