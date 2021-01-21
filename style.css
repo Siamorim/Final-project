@@ -13,7 +13,8 @@
   background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: "Texturina", serif;
+  /*font-family: "Texturina", serif;*/
+  font-family: "Poppins", sans-serif;
 }
 
 input[type="text"] {
