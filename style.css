@@ -209,4 +209,6 @@ h1 {
   font-size: 20px;
   font-style: bold;
   text-align: center;
+  position: relative;
+  left: 50px;
 }
