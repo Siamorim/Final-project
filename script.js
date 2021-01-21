@@ -91,7 +91,7 @@ function showTemperature(response) {
     response.data.main.feels_like
   );
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].main.description;
   document.querySelector("#icon").setAttribute(
     "src",
     //`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
