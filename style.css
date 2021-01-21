@@ -205,10 +205,10 @@ h1 {
 }
 
 .title {
-  color: white;
+  color: black;
   font-size: 35px;
   font-style: bolder;
   text-align: center;
   position: relative;
-  left: -20px;
+  left: -30px;
 }
