@@ -83,6 +83,9 @@ function showTemperature(response) {
   document.querySelector("#humidity").innerHTML = Math.round(
     response.data.main.humidity
   );
+  document.querySelector("#precipitation").innerHTML = `${Math.round(
+    response.data.list[0].pop * 100
+  )}%`;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
