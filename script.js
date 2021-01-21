@@ -130,4 +130,4 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 let celsiusTemperature = null;
 let fahrenheitTemperature = null;
 
-searchCity("New York");
+searchCity("Lisbon");
