@@ -1,4 +1,4 @@
-let now = new Date();
+let now = new Date(timestamp);
 
 function formatDate() {
   let days = [
@@ -103,13 +103,26 @@ function showTemperature(response) {
   celsiusTemperature = response.data.main.temp;
 }
 
+function formatHours(timestamp) {
+  let now = new Date(timestamp);
+  let currentHour = now.getHours();
+  if (currentHour < 10) {
+    currentHour = `0${currentHour}`;
+  }
+  let currentMinute = now.getMinutes();
+  if (currentMinute < 10) {
+    currentMinute = `0${currentMinute}`;
+  }
+  return `${hours}:${minutes}`;
+}
+
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = response.data.list[0];
   console.log(forecast);
   forecastElement.innerHTML = `  
           <div class="row">
-            <div class="col-2">12h00</div>
+            <div class="col-2">${formatHours(forecast.dt * 1000)}</div>
             <div class="w-100"></div>
             <div class="col-2">
               <small><img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" /></small>
