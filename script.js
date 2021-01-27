@@ -72,9 +72,6 @@ function searchLocation(position) {
   let longitude = position.coords.longitude;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
-
-  apiUrl = `https://openweathermap.org/data/2.5/forecast/hourly?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayForecast);
 }
 
 function showTemperature(response) {
@@ -107,11 +104,18 @@ function showTemperature(response) {
   celsiusTemperature = response.data.main.temp;
 }
 
+function displayForecast(response) {
+  console.log(response.data);
+}
+
 function searchCity(city) {
   let apiKey = "f6b05703004145fac5fd3f7a96bd1a10";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+
+  apiUrl = `https://openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function handleSubmit(event) {
