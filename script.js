@@ -104,8 +104,9 @@ function showTemperature(response) {
 }
 
 function displayForecast(response) {
-  console.log(response.data.list[0]);
   let forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.list[0];
+  console.log(forecast);
   forecastElement.innerHTML = `  
           <div class="row">
             <div class="col-2">12h00</div>
@@ -114,7 +115,7 @@ function displayForecast(response) {
               <small><img src="Sun.png" class="Sunn" /></small>
             </div>
             <div class="w-100"></div>
-             <div class="col-2"><div class="MinMax">11º</div></div>
+             <div class="col-2"><div class="MinMax">${forecast.main.temp}</div></div>
              `;
 }
 
