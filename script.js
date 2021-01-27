@@ -1,5 +1,3 @@
-let now = new Date();
-
 function formatDate(timestamp) {
   let now = new Date(timestamp);
   let days = [
