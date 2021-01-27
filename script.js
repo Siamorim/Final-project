@@ -37,11 +37,9 @@ function formatDate(timestamp) {
   if (currentMinute < 10) {
     currentMinute = `0${currentMinute}`;
   }
-  let day = days[date.getDay()];
-  return `${day} ${formatHours(timestamp)}`;
 
-  //let todayDay = document.querySelector("#todayDay");
-  //todayDay.innerHTML = return `${currentDay}, ${currentMonth} ${currentDate} ${currentFullYear}, ${currentHour}:${currentMinute}`;
+  let todayDay = document.querySelector("#todayDay");
+  todayDay.innerHTML = `${currentDay}, ${currentMonth} ${currentDate} ${currentFullYear}, ${currentHour}:${currentMinute}`;
 }
 
 formatDate();
