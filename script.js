@@ -104,8 +104,18 @@ function showTemperature(response) {
 }
 
 function displayForecast(response) {
-  let forecastElement = document.querySelector("#forecast");
   console.log(response.data.list[0]);
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = `  
+          <div class="row">
+            <div class="col-2">12h00</div>
+            <div class="w-100"></div>
+            <div class="col-2">
+              <small><img src="Sun.png" class="Sunn" /></small>
+            </div>
+            <div class="w-100"></div>
+             <div class="col-2"><div class="MinMax">11º</div></div>
+             `;
 }
 
 function searchCity(city) {
@@ -118,7 +128,7 @@ function searchCity(city) {
   axios.get(apiUrl).then(displayForecast);
 }
 
-function handleSubmit(event) {
+https: function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#cityInput").value;
   searchCity(city);
