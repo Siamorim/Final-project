@@ -112,7 +112,7 @@ function formatHours(timestamp) {
   if (currentMinute < 10) {
     currentMinute = `0${currentMinute}`;
   }
-  return `${hours}:${minutes}`;
+  return `${currentHour}:${currentMinute}`;
 }
 
 function displayForecast(response) {
