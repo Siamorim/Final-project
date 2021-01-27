@@ -1,5 +1,6 @@
+let now = new Date(timestamp);
+
 function formatDate(timestamp) {
-  let now = new Date(timestamp);
   let days = [
     "Sunday",
     "Monday",
