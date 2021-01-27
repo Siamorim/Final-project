@@ -117,7 +117,7 @@ function displayForecast(response) {
             <div class="w-100"></div>
              <div class="col-2"><div class="MinMax">${Math.round(
                forecast.main.temp
-             )}</div></div>
+             )}º</div></div>
              `;
 }
 
