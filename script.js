@@ -40,11 +40,9 @@ function formatDate(timestamp) {
 
   let todayDay = document.querySelector("#todayDay");
   //todayDay.innerHTML = `${day} ${formatHours(timestamp)}`;
-  document.querySelector("#todayDay").innerHTML = formatHours(
-    response.data.dt * 1000
-  );
-
-  // `${currentDay}, ${currentMonth} ${currentDate} ${currentFullYear}, ${currentHour}:${currentMinute}`;
+  document.querySelector(
+    "#todayDay"
+  ).innerHTML = `${currentDay}, ${currentMonth} ${currentDate} ${currentFullYear}, ${currentHour}:${currentMinute}`;
 
   //let day = days[date.getDay()];
   //return `${day} ${formatHours(timestamp)}`;
