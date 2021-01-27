@@ -115,7 +115,9 @@ function displayForecast(response) {
               <small><img src="Sun.png" class="Sunn" /></small>
             </div>
             <div class="w-100"></div>
-             <div class="col-2"><div class="MinMax">${forecast.main.temp}</div></div>
+             <div class="col-2"><div class="MinMax">${Math.round(
+               forecast.main.temp
+             )}</div></div>
              `;
 }
 
