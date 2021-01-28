@@ -55,6 +55,9 @@ function convertToFahrenheit(event) {
 
   tempElement = document.querySelector("#real");
   tempElement.innerHTML = Math.round(fahrenheitTemp);
+
+  tempElement = document.querySelector("#minMax");
+  tempElement.innerHTML = Math.round(fahrenheitTemp);
 }
 function convertToCelsius(event) {
   event.preventDefault();
@@ -64,6 +67,9 @@ function convertToCelsius(event) {
   tempElement.innerHTML = Math.round(celsiusTemperature);
 
   tempElement = document.querySelector("#real");
+  tempElement.innerHTML = Math.round(celsiusTemperature);
+
+  tempElement = document.querySelector("#minMax");
   tempElement.innerHTML = Math.round(celsiusTemperature);
 }
 
@@ -133,7 +139,9 @@ function displayForecast(response) {
             <div class="col-2">
             <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-             <div class="MinMax">${Math.round(forecast.main.temp)}º</div>
+             <div class="MinMax" id="MinMax">${Math.round(
+               forecast.main.temp
+             )}º</div>
              </div>
              `;
   forecast = response.data.list[1];
@@ -142,7 +150,9 @@ function displayForecast(response) {
             <div class="col-2">
             <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-            <div class="MinMax">${Math.round(forecast.main.temp)}º</div></div>
+            <div class="MinMax" id="MinMax">${Math.round(
+              forecast.main.temp
+            )}º</div></div>
              `;
 
   forecast = response.data.list[2];
@@ -151,7 +161,9 @@ function displayForecast(response) {
             <div class="col-2">
             <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-            <div class="MinMax">${Math.round(forecast.main.temp)}º</div></div>
+            <div class="MinMax" id="MinMax">${Math.round(
+              forecast.main.temp
+            )}º</div></div>
              `;
 
   forecast = response.data.list[3];
@@ -160,7 +172,9 @@ function displayForecast(response) {
             <div class="col-2">
             <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-            <div class="MinMax">${Math.round(forecast.main.temp)}º</div></div>
+            <div class="MinMax" id="MinMax">${Math.round(
+              forecast.main.temp
+            )}º</div></div>
              `;
 
   forecast = response.data.list[4];
@@ -169,7 +183,9 @@ function displayForecast(response) {
             <div class="col-2">
             <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-            <div class="MinMax">${Math.round(forecast.main.temp)}º</div></div>
+            <div class="MinMax" id="MinMax">${Math.round(
+              forecast.main.temp
+            )}º</div></div>
              `;
 
   forecast = response.data.list[5];
@@ -178,7 +194,9 @@ function displayForecast(response) {
             <div class="col-2">
             <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-            <div class="MinMax">${Math.round(forecast.main.temp)}º</div></div>
+            <div class="MinMax" id="MinMax">${Math.round(
+              forecast.main.temp
+            )}º</div></div>
              `;
 }
 
