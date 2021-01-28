@@ -128,6 +128,7 @@ function displayForecast(response) {
 
   forecast = response.data.list[1];
   forecastElement.innerHTML += `
+  <div class="w-100">
             <div class="col-2">
             <div>${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
