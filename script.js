@@ -156,21 +156,18 @@ function forecastDay(timestamp) {
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = null;
-
   forecastElement.innerHTML = null;
 
   for (let index = 2; index < 35; index += 8) {
     forecast = response.data.list[index];
-    let maxTemperature = Math.round(forecast.main.temp_max);
-    let minTemperature = Math.round(forecast.main.temp_min);
-
     forecastElement.innerHTML += `
   
             <div class="col">
             <div class= "forHour">${forecastDay(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-             <div class="Min"><span id="Min">${minTemperature}</span>º
-             <span class="Max"><span id="Max">${maxTemperature}</span>º</span>
+             <div class="MinMax"><span id="MinMax">${Math.round(
+               forecast.main.temp
+             )}</span>º</div>
              </div>
              `;
   }
