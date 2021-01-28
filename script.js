@@ -157,7 +157,7 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = null;
   forecastElement.innerHTML = null;
-  console.log(response.data.list);
+  console.log(forecast.main.temp_min);
 
   for (let index = 2; index < 35; index += 8) {
     forecast = response.data.list[index];
@@ -166,10 +166,10 @@ function displayForecast(response) {
             <div class="col">
             <div class= "forHour">${forecastDay(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-             <div class="MinMax"><span id="MinMax">${Math.round(
+             <div class="Min"><span id="Min">${Math.round(
                forecast.main.temp_min
              )}</span>º</div>
-             <span class="MinMax"><span id="MinMax">${Math.round(
+             <span class="Max"><span id="Max">${Math.round(
                forecast.main.temp_max
              )}</span>º</span>
              </div>
