@@ -38,10 +38,10 @@ function formatDate(timestamp) {
     currentMinute = `0${currentMinute}`;
   }
 
-  let partDay = "AM";
+  let partDay = "am";
   if (currentHour >= 12) {
     currentHour = currentHour - 12;
-    partDay = "PM";
+    partDay = "pm";
   }
 
   let todayDay = document.querySelector("#todayDay");
