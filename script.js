@@ -156,6 +156,8 @@ https: function handleSubmit(event) {
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
+
+  displayForecast();
 }
 let formHeader = document.querySelector("#formHeader");
 formHeader.addEventListener("submit", handleSubmit);
