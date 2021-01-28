@@ -52,6 +52,9 @@ function convertToFahrenheit(event) {
   let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = Math.round(fahrenheitTemp);
+
+  let tempElement = document.querySelector("#real");
+  tempElement.innerHTML = Math.round(fahrenheitTemp);
 }
 function convertToCelsius(event) {
   event.preventDefault();
