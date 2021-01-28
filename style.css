@@ -114,10 +114,10 @@ h2,
 
 .MinMax {
   font-size: 18px;
-  font-style: normal;
   padding: 0px;
   position: relative;
   left: 8px;
+  font-weight: bold;
 }
 
 .humidity {
