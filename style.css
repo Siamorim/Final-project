@@ -132,9 +132,9 @@ h2,
 
 .wind {
   margin: 0px auto;
-  padding: 0px 0px 0px 10px;
+  padding: 0px;
   position: relative;
-  right: 83px;
+  right: 10px;
   font-size: 16px;
 }
 
