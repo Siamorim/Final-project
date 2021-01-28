@@ -118,8 +118,7 @@ function formatHours(timestamp) {
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = response.data.list[0];
-  forecastElement.innerHTML = `  
-  <div class="row align-items-start">
+  forecastElement.innerHTML = `
             <div class="col-2">
             <div>${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
@@ -129,7 +128,6 @@ function displayForecast(response) {
 
   forecast = response.data.list[1];
   forecastElement.innerHTML += `
-  <div class="row align-items-start">
             <div class="col-2">
             <div>${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
