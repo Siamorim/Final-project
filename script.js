@@ -158,7 +158,6 @@ function displayForecast(response) {
   let forecast = null;
 
   forecastElement.innerHTML = null;
-  console.log(forecast.main.temp_min);
 
   for (let index = 2; index < 35; index += 8) {
     forecast = response.data.list[index];
