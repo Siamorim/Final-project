@@ -120,10 +120,6 @@ h2,
   font-size: 23px;
 }
 
-.col-2 {
-  padding: 0px;
-}
-
 .humidity {
   position: relative;
   right: -160px;
@@ -211,11 +207,6 @@ h1 {
 .TempToday .active:hover {
   text-decoration: none;
   color: white;
-}
-
-.wind {
-  position: relative;
-  right: 80px;
 }
 
 .title {
