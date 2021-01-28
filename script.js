@@ -64,7 +64,7 @@ function convertToCelsius(event) {
   tempElement.innerHTML = Math.round(celsiusTemperature);
 
   tempElement = document.querySelector("#real");
-  tempElement.innerHTML = Math.round(elsiusTemperature);
+  tempElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
