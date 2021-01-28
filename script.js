@@ -104,7 +104,7 @@ function showTemperature(response) {
     response.data.main.humidity
   );
   document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
+    response.data.wind.speed * 3.6
   );
   document.querySelector("#real").innerHTML = Math.round(
     response.data.main.feels_like
