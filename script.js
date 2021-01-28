@@ -158,7 +158,7 @@ function displayForecast(response) {
   let forecast = null;
   forecastElement.innerHTML = null;
 
-  for (let index = 2; index < 6; index++) {
+  for (let index = 2; index < 8; index++) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
   
