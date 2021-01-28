@@ -163,7 +163,7 @@ function displayForecast(response) {
     forecast = response.data.list[index];
     let maxTemperature = Math.round(forecast.main.temp_max);
     let minTemperature = Math.round(forecast.main.temp_min);
-    console.log(responde.data.list);
+    console.log(response.data.list);
 
     forecastElement.innerHTML += `
   
