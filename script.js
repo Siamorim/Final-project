@@ -124,6 +124,7 @@ function displayForecast(response) {
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
              <div class="MinMax">${Math.round(forecast.main.temp)}º</div>
              </div>
+             <div class="col-2">abc</div>
              `;
 
   forecast = response.data.list[1];
