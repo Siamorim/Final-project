@@ -159,7 +159,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = null;
   console.log(response.data.list);
 
-  for (let index = 2; index < 40; index += 8) {
+  for (let index = 4; index < 40; index += 8) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
   
