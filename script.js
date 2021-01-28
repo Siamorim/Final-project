@@ -125,7 +125,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = `
   
             <div class="col-2">
-            <div>${formatHours(forecast.dt * 1000)}</div>
+            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
              <div class="MinMax">${Math.round(forecast.main.temp)}º</div>
              </div>
@@ -134,7 +134,7 @@ function displayForecast(response) {
   forecastElement.innerHTML += `
   
             <div class="col-2">
-            <div>${formatHours(forecast.dt * 1000)}</div>
+            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
             <div class="MinMax">${Math.round(forecast.main.temp)}º</div></div>
              `;
@@ -143,7 +143,7 @@ function displayForecast(response) {
   forecastElement.innerHTML += `
   
             <div class="col-2">
-            <div>${formatHours(forecast.dt * 1000)}</div>
+            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
             <div class="MinMax">${Math.round(forecast.main.temp)}º</div></div>
              `;
@@ -152,7 +152,7 @@ function displayForecast(response) {
   forecastElement.innerHTML += `
   
             <div class="col-2">
-            <div>${formatHours(forecast.dt * 1000)}</div>
+            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
             <div class="MinMax">${Math.round(forecast.main.temp)}º</div></div>
              `;
@@ -161,7 +161,7 @@ function displayForecast(response) {
   forecastElement.innerHTML += `
   
             <div class="col-2">
-            <div>${formatHours(forecast.dt * 1000)}</div>
+            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
             <div class="MinMax">${Math.round(forecast.main.temp)}º</div></div>
              `;
@@ -170,7 +170,7 @@ function displayForecast(response) {
   forecastElement.innerHTML += `
   
             <div class="col-2">
-            <div>${formatHours(forecast.dt * 1000)}</div>
+            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
             <div class="MinMax">${Math.round(forecast.main.temp)}º</div></div>
              `;
