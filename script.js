@@ -169,6 +169,9 @@ function displayForecast(response) {
              <div class="MinMax"><span id="MinMax">${Math.round(
                forecast.main.temp_min
              )}</span>º</div>
+             <span class="MinMax"><span id="MinMax">${Math.round(
+               forecast.main.temp_max
+             )}</span>º</span>
              </div>
              `;
   }
