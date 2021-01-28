@@ -176,7 +176,7 @@ function displayForecast(response) {
             <div class= "forHour">${forecastDay(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
              <div class="MinMax"><span id="MinMax">${Math.round(
-               forecast.temp.max
+               forecast.main.temp
              )}</span>º</div>
              </div>
              `;
@@ -188,12 +188,11 @@ function searchCity(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);
 
-  //apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
-  apiUrl = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${city}&appid=${apiKey}&units=metric`;
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
-function handleSubmit(event) {
+https: function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#cityInput").value;
   searchCity(city);
