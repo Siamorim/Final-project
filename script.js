@@ -138,11 +138,20 @@ function formatHours(timestamp) {
 
 function forecastDay(timestamp) {
   let dayForecast = new Date(timestamp);
-  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
 
   let day = days[dayForecast.getDay()];
-  
+
   return `${day}`;
+}
 
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
