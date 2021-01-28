@@ -131,7 +131,8 @@ h2,
 }
 
 .wind {
-  text-align: right;
+  margin: 0px auto;
+  padding: 0px 0px 0px 10px;
   position: relative;
   right: 83px;
   font-size: 16px;
@@ -216,7 +217,7 @@ h1 {
 
 .wind {
   position: relative;
-  right: 82px;
+  right: 80px;
 }
 
 .title {
