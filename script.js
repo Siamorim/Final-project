@@ -61,8 +61,13 @@ function convertToFahrenheit(event) {
   tempElement = document.querySelector("#real");
   tempElement.innerHTML = Math.round(fahrenheitTemp);
 
-  tempElement = document.querySelector("#MinMax");
-  tempElement.innerHTML = Math.round(fahrenheitTemp);
+  let forecastTemp = document.querySelectorAll("#MinMax");
+  forecastTemp.forEach(function (item) {
+    // grabbing the current value to convert
+    let currentTemp = item.innerHTML;
+    // convert to Celsius
+    item.innerHTML = Math.round((currentTemp * 9) / 5 + 32);
+  });
 }
 function convertToCelsius(event) {
   event.preventDefault();
@@ -162,7 +167,6 @@ function displayForecast(response) {
   for (let index = 4; index < 40; index += 8) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
-  
             <div class="col">
             <div class= "forHour">${forecastDay(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
