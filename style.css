@@ -107,6 +107,7 @@ h2,
 .MinMax {
   font-size: 18px;
   font-style: normal;
+  padding: 0px;
 }
 
 .humidity {
