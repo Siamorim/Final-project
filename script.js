@@ -79,8 +79,13 @@ function convertToCelsius(event) {
   tempElement = document.querySelector("#real");
   tempElement.innerHTML = Math.round(celsiusTemperature);
 
-  tempElement = document.querySelector("#MinMax");
-  tempElement.innerHTML = Math.round(celsiusTemperature);
+  let forecastTemp = document.querySelectorAll("#MinMax");
+  forecastTemp.forEach(function (item) {
+    // grabbing the current value to convert
+    let currentTemp = item.innerHTML;
+    // convert to Celsius
+    item.innerHTML = Math.round(((currentTemp - 32) * 5) / 9);
+  });
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
