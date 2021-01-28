@@ -157,7 +157,8 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 
-  displayForecast();
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 let formHeader = document.querySelector("#formHeader");
 formHeader.addEventListener("submit", handleSubmit);
