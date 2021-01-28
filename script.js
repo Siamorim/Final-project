@@ -42,7 +42,7 @@ function formatDate(timestamp) {
   todayDay.innerHTML = `${currentDay}, ${currentMonth} ${currentDate} ${currentFullYear}, ${currentHour}:${currentMinute}`;
 }
 
-let date = new Date();
+let date = new Date(timestamp);
 formatDate(date);
 
 function convertToFahrenheit(event) {
