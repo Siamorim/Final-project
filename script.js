@@ -133,8 +133,11 @@ function formatHours(timestamp) {
 
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
-  let forecast = response.data.list[0];
-  forecastElement.innerHTML = `
+  let forecast = null;
+
+  for (let index = 0; index < 6; index++) {
+    forecast = response.data.list[index];
+    forecastElement.innerHTML = `
   
             <div class="col-2">
             <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
@@ -144,62 +147,8 @@ function displayForecast(response) {
              )}</span>º</div>
              </div>
              `;
-  forecast = response.data.list[1];
-  forecastElement.innerHTML += `
-  
-            <div class="col-2">
-            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
-            <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-             <div class="MinMax"><span id="MinMax">${Math.round(
-               forecast.main.temp
-             )}</span>º</div>
-             `;
-
-  forecast = response.data.list[2];
-  forecastElement.innerHTML += `
-  
-            <div class="col-2">
-            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
-            <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-             <div class="MinMax"><span id="MinMax">${Math.round(
-               forecast.main.temp
-             )}</span>º</div>
-             `;
-
-  forecast = response.data.list[3];
-  forecastElement.innerHTML += `
-  
-            <div class="col-2">
-            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
-            <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-             <div class="MinMax"><span id="MinMax">${Math.round(
-               forecast.main.temp
-             )}</span>º</div>
-             `;
-
-  forecast = response.data.list[4];
-  forecastElement.innerHTML += `
-  
-            <div class="col-2">
-            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
-            <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-             <div class="MinMax"><span id="MinMax">${Math.round(
-               forecast.main.temp
-             )}</span>º</div>
-             `;
-
-  forecast = response.data.list[5];
-  forecastElement.innerHTML += `
-  
-            <div class="col-2">
-            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
-            <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-             <div class="MinMax"><span id="MinMax">${Math.round(
-               forecast.main.temp
-             )}</span>º</div>
-             `;
+  }
 }
-
 function searchCity(city) {
   let apiKey = "f6b05703004145fac5fd3f7a96bd1a10";
   let units = "metric";
