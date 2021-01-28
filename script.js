@@ -163,6 +163,7 @@ function displayForecast(response) {
     forecast = response.data.list[index];
     let maxTemperature = Math.round(forecast.main.temp_max);
     let minTemperature = Math.round(forecast.main.temp_min);
+    console.log(forecast.main.temp_min);
     forecastElement.innerHTML += `
   
             <div class="col">
