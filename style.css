@@ -96,6 +96,10 @@ h2,
   width: 34px;
 }
 
+.forHour {
+  padding: 0px;
+}
+
 .NextDays {
   position: relative;
   top: 0px;
