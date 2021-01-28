@@ -134,6 +134,7 @@ function formatHours(timestamp) {
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = null;
+  forecastElement.innerHTML = null;
 
   for (let index = 0; index < 6; index++) {
     forecast = response.data.list[index];
