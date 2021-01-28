@@ -95,6 +95,8 @@ h2,
 .Sunn {
   width: 34px;
   padding: 0px;
+  position: relative;
+  left: 4px;
 }
 
 .forHour {
