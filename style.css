@@ -220,6 +220,11 @@ h1 {
   padding: 0px;
 }
 
+.wind {
+  position: relative;
+  right: -4px;
+}
+
 .title {
   color: black;
   font-size: 35px;
