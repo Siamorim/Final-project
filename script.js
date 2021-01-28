@@ -63,9 +63,6 @@ function convertToFahrenheit(event) {
 
   let forecastTemp = document.querySelectorAll("#MinMax");
   forecastTemp.forEach(function (item) {
-    event.preventDefault();
-    celsiusLink.classList.add("active");
-    fahrenheitLink.classList.remove("active");
     // grabbing the current value to convert
     let currentTemp = item.innerHTML;
     // convert to Celsius
@@ -84,9 +81,6 @@ function convertToCelsius(event) {
 
   let forecastTemp = document.querySelectorAll("#MinMax");
   forecastTemp.forEach(function (item) {
-    event.preventDefault();
-    celsiusLink.classList.add("active");
-    fahrenheitLink.classList.remove("active");
     // grabbing the current value to convert
     let currentTemp = item.innerHTML;
     // convert to Celsius
