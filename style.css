@@ -101,6 +101,7 @@ h2,
 
 .forHour {
   padding: 0px;
+  font-weight: bold;
 }
 
 .NextDays {
