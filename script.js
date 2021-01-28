@@ -40,7 +40,6 @@ function formatDate(timestamp) {
 
   let partDay = "am";
   if (currentHour >= 12) {
-    currentHour = currentHour - 12;
     partDay = "pm";
   }
 
