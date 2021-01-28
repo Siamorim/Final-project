@@ -131,6 +131,20 @@ function displayForecast(response) {
                forecast.main.temp
              )}º</div></div>
              `;
+
+  forecast = response.data.list[1];
+  forecastElement.innerHTML += `  
+          <div class="row">
+            <div class="col-2">${formatHours(forecast.dt * 1000)}</div>
+            <div class="w-100"></div>
+            <div class="col-2">
+              <small><img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" /></small>
+            </div>
+            <div class="w-100"></div>
+             <div class="col-2"><div class="MinMax">${Math.round(
+               forecast.main.temp
+             )}º</div></div>
+             `;
 }
 
 function searchCity(city) {
