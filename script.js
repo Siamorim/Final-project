@@ -168,7 +168,7 @@ function displayForecast(response) {
             <div class="col">
             <div class= "forHour">${forecastDay(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-             <div class="Min"><span id="Min">${minTemperature}</span>º</div>
+             <div class="Min"><span id="Min">${minTemperature}</span>º
              <span class="Max"><span id="Max">${maxTemperature}</span>º</span>
              </div>
              `;
