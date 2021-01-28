@@ -136,6 +136,14 @@ function formatHours(timestamp) {
   return `${currentHour}:${currentMinute}`;
 }
 
+function forecastDay(timestamp) {
+  let dayForecast = new Date(timestamp);
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+  let day = days[dayForecast.getDay()];
+  
+  return `${day}`;
+
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = null;
@@ -146,7 +154,7 @@ function displayForecast(response) {
     forecastElement.innerHTML += `
   
             <div class="col-2">
-            <div class= "forHour">${formatHours(forecast.dt * 1000)}</div>
+            <div class= "forHour">${forecastDay(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
              <div class="MinMax"><span id="MinMax">${Math.round(
                forecast.main.temp
