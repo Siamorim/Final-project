@@ -217,6 +217,7 @@ h1 {
 .imgWin {
   position: relative;
   right: -4px;
+  padding: 0px;
 }
 
 .title {
