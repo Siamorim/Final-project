@@ -56,7 +56,7 @@ function convertToFahrenheit(event) {
   tempElement = document.querySelector("#real");
   tempElement.innerHTML = Math.round(fahrenheitTemp);
 
-  tempElement = document.querySelector("#minMax");
+  tempElement = document.querySelector("#MinMax");
   tempElement.innerHTML = Math.round(fahrenheitTemp);
 }
 function convertToCelsius(event) {
@@ -69,7 +69,7 @@ function convertToCelsius(event) {
   tempElement = document.querySelector("#real");
   tempElement.innerHTML = Math.round(celsiusTemperature);
 
-  tempElement = document.querySelector("#minMax");
+  tempElement = document.querySelector("#MinMax");
   tempElement.innerHTML = Math.round(celsiusTemperature);
 }
 
