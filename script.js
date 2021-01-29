@@ -193,7 +193,7 @@ function displayForecast(response) {
   for (let index = 4; index < 40; index += 8) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
-            <div class="col">
+            <div class="col" class="formatForecast">
             <div class= "forHour">${forecastDay(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
              <div class="forTemp"><span id="forTemp">${Math.round(
