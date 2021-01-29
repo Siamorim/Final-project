@@ -220,3 +220,8 @@ h1 {
 .weatherTitle {
   line-height: 0.5;
 }
+
+.title,
+.weatherTitle {
+  font-family: "Texturina", serif;
+}
