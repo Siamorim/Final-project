@@ -215,7 +215,7 @@ function searchCity(city) {
   axios.get(apiUrl).then(displayForecast);
 }
 
-https: function handleSubmit(event) {
+function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#cityInput").value;
   searchCity(city);
