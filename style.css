@@ -106,6 +106,7 @@ h2,
 .NextDays {
   position: relative;
   top: 0px;
+  padding: 120px 0px 0px 0px;
   font-weight: 900px;
   font-size: 21px;
 }
