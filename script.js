@@ -195,7 +195,7 @@ function displayForecast(response) {
                forecast.main.temp_min
              )}</span>º <span id="Max">${Math.round(
       forecast.main.temp_max
-    )}</span></div>
+    )}</span>º</div>
              </div>
              `;
   }
