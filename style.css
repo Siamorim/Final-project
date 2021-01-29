@@ -166,10 +166,6 @@ h1 {
   max-width: 730px;
 }
 
-.col-md-2 {
-  flex: 19px;
-}
-
 .btnCurrentlocation {
   text-align: center;
   border-radius: 40px;
