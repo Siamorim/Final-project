@@ -112,7 +112,8 @@ h2,
   font-size: 23px;
 }
 
-.MinMax {
+.Min,
+.Max {
   padding: 0px;
   position: relative;
   left: 7px;

@@ -61,7 +61,15 @@ function convertToFahrenheit(event) {
   tempElement = document.querySelector("#real");
   tempElement.innerHTML = Math.round(fahrenheitTemp);
 
-  let forecastTemp = document.querySelectorAll("#MinMax");
+  let forecastTemp = document.querySelectorAll("#Min");
+  forecastTemp.forEach(function (item) {
+    // grabbing the current value to convert
+    let currentTemp = item.innerHTML;
+    // convert to Celsius
+    item.innerHTML = Math.round((currentTemp * 9) / 5 + 32);
+  });
+
+  let forecastTemp = document.querySelectorAll("#Max");
   forecastTemp.forEach(function (item) {
     // grabbing the current value to convert
     let currentTemp = item.innerHTML;
@@ -79,12 +87,20 @@ function convertToCelsius(event) {
   tempElement = document.querySelector("#real");
   tempElement.innerHTML = Math.round(celsiusTemperature);
 
-  let forecastTemp = document.querySelectorAll("#MinMax");
+  let forecastTemp = document.querySelectorAll("#Min");
   forecastTemp.forEach(function (item) {
     // grabbing the current value to convert
     let currentTemp = item.innerHTML;
     // convert to Celsius
     item.innerHTML = Math.round(((currentTemp - 32) * 5) / 9);
+  });
+
+  let forecastTemp = document.querySelectorAll("#Max");
+  forecastTemp.forEach(function (item) {
+    // grabbing the current value to convert
+    let currentTemp = item.innerHTML;
+    // convert to Celsius
+    item.innerHTML = Math.round((currentTemp * 9) / 5 + 32);
   });
 }
 
@@ -175,9 +191,11 @@ function displayForecast(response) {
             <div class="col">
             <div class= "forHour">${forecastDay(forecast.dt * 1000)}</div>
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
-             <div class="MinMax"><span id="MinMax">${Math.round(
-               forecast.main.temp
-             )}</span>º</div>
+             <div class="Min"><span id="Min">${Math.round(
+               forecast.main.temp_min
+             )}</span>º <span id="Max">${Math.round(
+      forecast.main.temp_max
+    )}</span></div>
              </div>
              `;
   }
