@@ -38,9 +38,9 @@ function formatDate(timestamp) {
     currentMinute = `0${currentMinute}`;
   }
 
-  let partDay = "Am";
+  let partDay = "am";
   if (currentHour >= 12) {
-    partDay = "Pm";
+    partDay = "pm";
   }
 
   let todayDay = document.querySelector("#todayDay");
