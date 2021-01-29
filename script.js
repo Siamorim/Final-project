@@ -61,16 +61,16 @@ function convertToFahrenheit(event) {
   tempElement = document.querySelector("#real");
   tempElement.innerHTML = Math.round(fahrenheitTemp);
 
-  let forecastTemp = document.querySelectorAll("#Min");
-  forecastTemp.forEach(function (item) {
+  let forecastMin = document.querySelectorAll("#Min");
+  forecastMin.forEach(function (item) {
     // grabbing the current value to convert
     let currentTemp = item.innerHTML;
     // convert to Celsius
     item.innerHTML = Math.round((currentTemp * 9) / 5 + 32);
   });
 
-  let forecastTemp = document.querySelectorAll("#Max");
-  forecastTemp.forEach(function (item) {
+  let forecastMax = document.querySelectorAll("#Max");
+  forecastMax.forEach(function (item) {
     // grabbing the current value to convert
     let currentTemp = item.innerHTML;
     // convert to Celsius
@@ -87,16 +87,16 @@ function convertToCelsius(event) {
   tempElement = document.querySelector("#real");
   tempElement.innerHTML = Math.round(celsiusTemperature);
 
-  let forecastTemp = document.querySelectorAll("#Min");
-  forecastTemp.forEach(function (item) {
+  let forecastMin = document.querySelectorAll("#Min");
+  forecastMin.forEach(function (item) {
     // grabbing the current value to convert
     let currentTemp = item.innerHTML;
     // convert to Celsius
     item.innerHTML = Math.round(((currentTemp - 32) * 5) / 9);
   });
 
-  let forecastTemp = document.querySelectorAll("#Max");
-  forecastTemp.forEach(function (item) {
+  let forecastMax = document.querySelectorAll("#Max");
+  forecastMax.forEach(function (item) {
     // grabbing the current value to convert
     let currentTemp = item.innerHTML;
     // convert to Celsius
