@@ -93,6 +93,8 @@ h2,
 
 .Sunn {
   width: 40px;
+  position: relative;
+  right: 10px;
 }
 
 .forHour {
