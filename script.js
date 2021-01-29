@@ -198,9 +198,7 @@ function displayForecast(response) {
             <img src=${`Icon/${forecast.weather[0].icon}.png`} class="Sunn" />
              <div class="Min"><span id="Min">${Math.round(
                forecast.main.temp_min
-             )}</span>º <span id="Max">${Math.round(
-      forecast.main.temp_max
-    )}</span>º</div>
+             )}</span>º
              </div>
              `;
   }
