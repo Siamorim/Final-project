@@ -211,8 +211,9 @@ h1 {
   font-size: 35px;
   font-weight: bolder;
   text-align: center;
-  position: relative;
-  left: -60px;
+  position: fixed;
+  left: 260px;
+  top: 0px;
   margin: 0;
   padding: 0;
 }
