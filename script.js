@@ -76,7 +76,10 @@ function convertToFahrenheit(event) {
     // convert to Celsius
     item.innerHTML = Math.round((currentTemp * 9) / 5 + 32);
   });
+  fahrenheitLink.removeEventListener("click", convertToFahrenheit);
+  celsiusLink.addEventListener("click", convertToCelsius);
 }
+
 function convertToCelsius(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
@@ -102,6 +105,8 @@ function convertToCelsius(event) {
     // convert to Celsius
     item.innerHTML = Math.round((currentTemp * 9) / 5 + 32);
   });
+  fahrenheitLink.addEventListener("click", convertToFahrenheit);
+  celsiusLink.removeEventListener("click", convertToCelsius);
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
