@@ -199,10 +199,11 @@ function displayForecast(response) {
              <div class="Min"><span id="Min">${Math.round(
                forecast.main.temp_min
              )}</span>º </div>`;
-             //<span id="Max">${Math.round(
-              // forecast.main.temp_max
-             //)}</span>º</div>
-             //</div>}
+    //<span id="Max">${Math.round(
+    // forecast.main.temp_max
+    //)}</span>º</div>
+    //</div>
+  }
 }
 function searchCity(city) {
   let apiKey = "f6b05703004145fac5fd3f7a96bd1a10";
