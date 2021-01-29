@@ -1,6 +1,6 @@
 .container {
   box-sizing: content-box;
-  text-align: left;
+
   border: 3px solid #fac168;
   /*background-image: linear-gradient(to bottom right, cornflowerblue, white);*/
   border-radius: 40px;
