@@ -112,6 +112,10 @@ h2,
   font-size: 23px;
 }
 
+.col {
+  padding: 0px;
+}
+
 .forTemp {
   padding: 0px;
   position: relative;
