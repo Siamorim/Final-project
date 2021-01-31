@@ -214,4 +214,5 @@ h1 {
   display: block;
   text-align: center;
   position: fixed;
+  max-width: fit-content;
 }
