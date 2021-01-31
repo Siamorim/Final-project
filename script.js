@@ -188,7 +188,6 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = null;
   forecastElement.innerHTML = null;
-  console.log(response.data.list);
 
   for (let index = 4; index < 40; index += 8) {
     forecast = response.data.list[index];
