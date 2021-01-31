@@ -1,5 +1,4 @@
 .container-fluid {
-  box-sizing: content-box;
   border: 3px solid #fac168;
   /*background-image: linear-gradient(to bottom right, cornflowerblue, white);*/
   border-radius: 40px;
@@ -214,11 +213,3 @@ h1 {
 .col {
   padding: 0;
 }
-
-/*.NextDays {
-  position: relative;
-  top: 0px;
-  padding: 160px 0px 0px 90px;
-  font-weight: 200px;
-  font-size: 21px;
-}*/
