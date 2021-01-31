@@ -13,6 +13,10 @@
   font-family: "Texturina", serif;
 }
 
+.containerWeather {
+  margin: 10px 0px;
+}
+
 input[type="text"] {
   border-radius: 40px;
   border: 1px solid #a3c0f5;
