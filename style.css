@@ -16,7 +16,7 @@
 .containerWeather {
   margin: 10px 0px;
   max-width: 740px;
-  height: 100%;
+  text-align: center;
 }
 
 input[type="text"] {
