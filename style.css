@@ -200,7 +200,7 @@ h1 {
 
 .titleSpace {
   line-height: 0.4cm;
-  left: -5px;
+  text-indent: 0.2cm;
 }
 
 .NextDays {
