@@ -183,6 +183,7 @@ h1 {
   left: 600px;
   color: red;
   font-weight: bold;
+  display: block;
 }
 
 .NextDays {
