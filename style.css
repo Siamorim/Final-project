@@ -212,10 +212,10 @@ h1 {
   font-weight: bolder;
   text-align: center;
   position: fixed;
-  left: 0px;
+  left: 50px;
   margin: 0px;
   padding: 0px;
-  top: 0px;
+  top: 20px;
 }
 
 .weatherTitle {
