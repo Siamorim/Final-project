@@ -169,7 +169,7 @@ h1 {
   font-size: 12px;
   font-family: "Texturina", serif;
   font-weight: bold;
-  position: absolute;
+  position: relative;
   top: 2px;
   left: 100px;
 }
@@ -185,7 +185,7 @@ h1 {
 }
 
 .title {
-  position: fixed;
+  position: relative;
   left: 600px;
   color: red;
   font-weight: bold;
