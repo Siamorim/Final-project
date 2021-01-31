@@ -209,6 +209,7 @@ h1 {
 .NextDays {
   padding: 160px 0px 0px 40px;
   table-layout: fixed;
+  text-align: center;
 }
 
 /*.NextDays {
