@@ -15,7 +15,8 @@
 }
 
 .containerWeather {
-  margin: 10px 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 input[type="text"] {
