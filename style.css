@@ -160,6 +160,7 @@ h1 {
 
 .containerForecast {
   box-sizing: content-box;
+  display: block;
   position: relative;
   right: 7px;
   left: 7px;
