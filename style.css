@@ -210,6 +210,9 @@ h1 {
   padding: 160px 0px 0px 0px;
   table-layout: fixed;
   text-align: center;
+}
+
+.col {
   margin: 0;
 }
 
