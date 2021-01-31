@@ -191,7 +191,7 @@ h1 {
 
 .title {
   position: relative;
-  left: 230px;
+  left: 232px;
   color: black;
   font-weight: bold;
   display: block;
@@ -200,7 +200,7 @@ h1 {
 
 .titleSpace {
   line-height: 0.4cm;
-  text-indent: -0.5cm;
+  text-indent: -0.6cm;
 }
 
 .NextDays {
