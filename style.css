@@ -207,21 +207,8 @@ h1 {
   color: white;
 }
 
-.title {
-  color: black;
-  font-size: 35px;
-  font-weight: bolder;
-  position: absolute;
-  left: 100px;
-  top: 100px;
-  height: auto;
-}
-
-.weatherTitle {
-  line-height: 0.5;
-}
-
 .title,
 .weatherTitle {
   font-family: "Texturina", serif;
+  color: black;
 }
