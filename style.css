@@ -208,7 +208,7 @@ h1 {
 }
 
 .title {
-  position: relative;
+  position: fixed;
   left: -450px;
   color: black;
   font-weight: bold;
