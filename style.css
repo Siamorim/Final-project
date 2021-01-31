@@ -214,8 +214,7 @@ h1 {
   position: absolute;
   left: 100px;
   top: 100px;
-  min-width: ​70px;
-  max-width: 70px;
+  height: auto;
 }
 
 .weatherTitle {
