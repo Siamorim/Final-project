@@ -22,67 +22,110 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-</head>
+  </head>
   <body>
     <form id="formHeader">
-    <div class="container">
-      <div class="containerPart1">
-      <div class="line">
-        <div class="row">
-          <div class="col-6">
-              <i class="fas fa-map-marker-alt"></i>
-            <h1 id= "city">Lisbon</h1><span>,</span>
-            <span class="country" id="country">PT</span>
+      <div class="container">
+        <div class="containerPart1">
+          <div class="line">
+            <div class="row">
+              <div class="col-6">
+                <i class="fas fa-map-marker-alt"></i>
+                <h1 id="city">Lisbon</h1>
+                <span>,</span>
+                <span class="country" id="country">PT</span>
+              </div>
+              <div class="col-6">
+                <div class="todayDay" id="todayDay">
+                  Saturday, November 30 2020 18:19pm
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-6">
-            <div class="todayDay" id="todayDay">Saturday, November 30 2020 18:19pm</div>
+          <input
+            type="text"
+            placeholder="Enter a city..."
+            class="city"
+            id="cityInput"
+            autocomplete="off"
+          />
+          <button
+            type="button"
+            class="btnCurrentlocation"
+            id="btnCurrentlocation"
+          >
+            <em>Current location</em>
+          </button>
+          <input
+            type="image"
+            src="whitemag.png"
+            class="magn"
+            value="search"
+            id="search"
+          />
+          <div class="title">
+            The
+            <div class="weatherTitle">Weather</div>
           </div>
         </div>
-      </div>
-      <input type="text" placeholder="Enter a city..." class="city" id= "cityInput" autocomplete= "off"/>
-        <button type= "button" class= "btnCurrentlocation" id= "btnCurrentlocation"><em>Current location</em></Button>
-      <input type="image" src="whitemag.png" class="magn" value="search" id= "search"/>
-      <div class="title"> The 
-        <div class="weatherTitle">Weather</div></div>
-    </div>
         <div class="Today">
           <div class="row">
             <div class="col">
               <div class="TempToday">
-                <img src="" alt= "Clear" class="icon" id="icon" />
-                <span class="temp" id= "temp">22</span>
-                <span class="units"><a href="#" id="celsius-link" class= "active">ºC</a> | <a href="#" id="fahrenheit-link">ºF</a></span>
+                <img src="" alt="Clear" class="icon" id="icon" />
+                <span class="temp" id="temp">22</span>
+                <span class="units"
+                  ><a href="#" id="celsius-link" class="active">ºC</a> |
+                  <a href="#" id="fahrenheit-link">ºF</a></span
+                >
               </div>
             </div>
             <div class="col">
-              <div class="realFeel"><em><span class="imgReal">🌡</span> Feels like: <span id="real">110</span>º</em></div>
+              <div class="realFeel">
+                <em
+                  ><span class="imgReal">🌡</span> Feels like:
+                  <span id="real">110</span>º</em
+                >
+              </div>
             </div>
             <div class="w-100"></div>
             <div class="col">
               <div class="description" id="description">Sunny</div>
             </div>
             <div class="col">
-              <div class="humidity"><em><span class="imgHum">🌢</span> Humidity: <span id="humidity">10</span>%</em></div>
+              <div class="humidity">
+                <em
+                  ><span class="imgHum">🌢</span> Humidity:
+                  <span id="humidity">10</span>%</em
+                >
+              </div>
             </div>
             <div class="w-100"></div>
             <div class="col">
-              <div class="wind"><em><span class="imgWin">💨</span>Wind: <span id="wind">20</span> km/h</em></div>
+              <div class="wind">
+                <em
+                  ><span class="imgWin">💨</span>Wind:
+                  <span id="wind">20</span> km/h</em
+                >
               </div>
             </div>
           </div>
-        <div class="containerpart2">
-        <div class="NextDays row" id="forecast"></div>
-          </div>
-          <div class= "code">
-      <a href= "https://github.com/Siamorim/Final-project" target= "_blank">
-        Open-source code
-        </a>
-        by Sílvia Amorim
-    </div>
-    </div>
         </div>
+        <div class="containerpart2">
+          <div class="NextDays row" id="forecast"></div>
+        </div>
+        <div class="code">
+          <a href="https://github.com/Siamorim/Final-project" target="_blank">
+            Open-source code
+          </a>
+          by Sílvia Amorim
+        </div>
+      </div>
     </form>
     <script src="script.js"></script>
   </body>
