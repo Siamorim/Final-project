@@ -164,6 +164,7 @@ h1 {
   left: 7px;
   text-align: center;
   max-width: 730px;
+  min-width: 730px;
 }
 
 .btnCurrentlocation {
