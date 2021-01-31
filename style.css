@@ -164,6 +164,7 @@ h1 {
   right: 7px;
   left: 7px;
   text-align: center;
+  overflow: hidden;
 }
 
 .btnCurrentlocation {
