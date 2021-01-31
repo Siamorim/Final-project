@@ -19,6 +19,7 @@
   padding: 0px;
   max-width: 740px;
   min-width: 740px;
+  justify-content: center;
 }
 
 input[type="text"] {
