@@ -53,13 +53,13 @@ h2,
   line-height: 1px;
   padding: 0px;
   position: relative;
-  left: -65px;
+  left: -63px;
   top: 4px;
 }
 .units {
   position: relative;
   bottom: 2px;
-  left: -65px;
+  left: -63px;
   font-size: 14px;
 }
 
@@ -85,7 +85,7 @@ h2,
   margin: 0px auto;
   padding: 0px 0px 0px 10px;
   position: relative;
-  left: 82px;
+  left: 40px;
   top: 2px;
 }
 
