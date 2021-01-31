@@ -135,15 +135,6 @@ h1 {
   right: -48px;
 }
 
-/*.containerForecast {
-  box-sizing: content-box;
-  display: block;
-  position: relative;
-  right: 7px;
-  left: 7px;
-  text-align: center;
-}*/
-
 .btnCurrentlocation {
   text-align: center;
   border-radius: 40px;
@@ -171,7 +162,7 @@ h1 {
   font-weight: bold;
   position: relative;
   top: 2px;
-  left: 100px;
+  left: 130px;
 }
 
 .TempToday .active {
