@@ -159,6 +159,7 @@ h1 {
 }
 
 .containerForecast {
+  box-sizing: content-box;
   position: relative;
   right: 7px;
   left: 7px;
