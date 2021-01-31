@@ -206,13 +206,3 @@ h1 {
   text-decoration: none;
   color: white;
 }
-
-.title {
-  font-family: "Texturina", serif;
-  color: red;
-  display: block;
-  position: relative;
-  left: 150px;
-  top: 100px;
-  max-width: fit-content;
-}
