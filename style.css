@@ -198,6 +198,10 @@ h1 {
   font-size: 30px;
 }
 
+.titleSpace {
+  line-height: 0cm;
+}
+
 .NextDays {
   padding-top: 200px;
   padding-left: 15px;
