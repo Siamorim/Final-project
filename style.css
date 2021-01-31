@@ -17,6 +17,8 @@
 .containerWeather {
   margin: 0px;
   padding: 0px;
+  max-width: 740px;
+  min-width: 740px;
 }
 
 input[type="text"] {
