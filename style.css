@@ -207,6 +207,7 @@ h1 {
   color: white;
 }
 
-h3 {
-  line-height: 0.5px;
+.title {
+  position: relative;
+  left: 100px;
 }
