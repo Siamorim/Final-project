@@ -204,7 +204,6 @@ function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#cityInput").value;
   searchCity(city);
-  console.log(city);
 }
 
 function getCurrentLocation(event) {
