@@ -166,6 +166,7 @@ h1 {
   position: fixed;
   bottom: 2px;
   left: 300px;
+  display: block;
 }
 
 .TempToday .active {
