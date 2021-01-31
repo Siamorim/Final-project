@@ -68,14 +68,6 @@ function convertToFahrenheit(event) {
     // convert to Celsius
     item.innerHTML = Math.round((currentTemp * 9) / 5 + 32);
   });
-
-  //let forecastMax = document.querySelectorAll("#Max");
-  //forecastMax.forEach(function (item) {
-  // grabbing the current value to convert
-  //let currentTemp = item.innerHTML;
-  // convert to Celsius
-  //item.innerHTML = Math.round((currentTemp * 9) / 5 + 32);
-  //});
   fahrenheitLink.removeEventListener("click", convertToFahrenheit);
   celsiusLink.addEventListener("click", convertToCelsius);
 }
@@ -98,13 +90,6 @@ function convertToCelsius(event) {
     item.innerHTML = Math.round(((currentTemp - 32) * 5) / 9);
   });
 
-  //let forecastMax = document.querySelectorAll("#Max");
-  //forecastMax.forEach(function (item) {
-  // grabbing the current value to convert
-  //let currentTemp = item.innerHTML;
-  // convert to Celsius
-  //item.innerHTML = Math.round((currentTemp * 9) / 5 + 32);
-  //});
   fahrenheitLink.addEventListener("click", convertToFahrenheit);
   celsiusLink.removeEventListener("click", convertToCelsius);
 }
@@ -219,6 +204,7 @@ function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#cityInput").value;
   searchCity(city);
+  console.log(city);
 }
 
 function getCurrentLocation(event) {
