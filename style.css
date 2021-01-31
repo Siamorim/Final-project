@@ -169,7 +169,7 @@ h1 {
   font-size: 12px;
   font-family: "Texturina", serif;
   font-weight: bold;
-  position: fixed;
+  position: absolute;
   top: 2px;
   left: 100px;
 }
