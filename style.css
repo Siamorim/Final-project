@@ -161,8 +161,8 @@ h1 {
   font-family: "Texturina", serif;
   font-weight: bold;
   position: relative;
-  top: 2px;
-  left: 200px;
+  top: 0px;
+  left: 220px;
 }
 
 .TempToday .active {
