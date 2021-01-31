@@ -212,6 +212,7 @@ h1 {
   font-family: "Texturina", serif;
   color: red;
   display: block;
-  position: fixed;
+  position: relative;
+  left: 50px;
   max-width: fit-content;
 }
