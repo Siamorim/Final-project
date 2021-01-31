@@ -150,14 +150,14 @@ h1 {
   right: -48px;
 }
 
-.containerForecast {
+/*.containerForecast {
   box-sizing: content-box;
   display: block;
   position: relative;
   right: 7px;
   left: 7px;
   text-align: center;
-}
+}*/
 
 .btnCurrentlocation {
   text-align: center;
@@ -209,3 +209,11 @@ h1 {
 .NextDays {
   padding: 160px 0px 0px 0px;
 }
+
+/*.NextDays {
+  position: relative;
+  top: 0px;
+  padding: 160px 0px 0px 90px;
+  font-weight: 200px;
+  font-size: 21px;
+}*/
