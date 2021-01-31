@@ -210,7 +210,7 @@ h1 {
 .title,
 .weatherTitle {
   font-family: "Texturina", serif;
-  color: black;
+  color: red;
   display: block;
   text-align: center;
   position: fixed;
