@@ -207,8 +207,7 @@ h1 {
   color: white;
 }
 
-.title,
-.weatherTitle {
+.title {
   font-family: "Texturina", serif;
   color: red;
   display: block;
