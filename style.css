@@ -211,4 +211,6 @@ h1 {
 .weatherTitle {
   font-family: "Texturina", serif;
   color: black;
+  display: block;
+  text-align: center;
 }
