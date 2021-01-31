@@ -206,3 +206,7 @@ h1 {
   text-decoration: none;
   color: white;
 }
+
+h3 {
+  line-height: 0px;
+}
