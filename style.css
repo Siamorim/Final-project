@@ -12,6 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Texturina", serif;
+  text-align: center;
 }
 
 .containerWeather {
@@ -19,7 +20,6 @@
   padding: 0px;
   max-width: 740px;
   min-width: 740px;
-  text-align: center;
 }
 
 input[type="text"] {
