@@ -172,7 +172,7 @@ h1 {
   font-family: "Texturina", serif;
   font-weight: bold;
   position: relative;
-  left: 36px;
+  left: 35px;
   bottom: 1px;
 }
 
@@ -196,7 +196,7 @@ h1 {
 }
 
 .titleSpace {
-  line-height: 0.3px;
+  line-height: 0.4px;
 }
 
 .NextDays {
