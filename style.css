@@ -208,7 +208,7 @@ h1 {
 
 .NextDays {
   padding: 160px 0px 0px 0px;
-  box-sizing: content-box;
+  max-width: 720px;
 }
 
 /*.NextDays {
